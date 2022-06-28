@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const de_1 = require("./de");
+const gobelet_1 = require("./gobelet");
+const joueur_1 = require("./joueur");
+const de = new de_1.De();
+const gobelet = new gobelet_1.Gobelet();
+const joueur = new joueur_1.Joueur("B");
+const joueur1 = new joueur_1.Joueur("Ben");
+const joueur2 = new joueur_1.Joueur("Joe");
+gobelet.lancer();
+gobelet.afficher_score();
+console.log(joueur1.get_nom());
+console.log(joueur2.get_nom());
